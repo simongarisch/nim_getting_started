@@ -5,9 +5,11 @@ import math
 
 
 proc is_prime(x: int64): bool =
-    if x==2 or x==3:
+    if x==0 or x==1:
+        return false
+    if x==2:
         return true
-    for i in 4..<x:
+    for i in 2..<x:
         if x mod i == 0:
             return false
     return true
