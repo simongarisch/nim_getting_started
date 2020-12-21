@@ -11,3 +11,9 @@ for value in @[3, 4, 5]:
 
 for i, value in @[3, 4, 5]:
   echo "index: ", $i, ", value:", $value
+
+
+echo "--------------------"
+let list = @[4, 8, 15, 16, 23, 42]
+for i in 0..<list.len:
+  stdout.write($list[i] & " ")
