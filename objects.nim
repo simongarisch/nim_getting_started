@@ -26,3 +26,15 @@ let person4 = Person(age: 3)
 # unspecified members will be initialized with their default
 # values. In this case it is the empty string.
 doAssert person4.name == ""
+
+echo "--------------------"
+type
+  Dog = object
+    age: int
+
+proc bark(self: Dog) =
+  echo "Woof!"
+
+let dog = Dog(age:3)
+echo dog # (age: 3)
+dog.bark() # 'Woof!'
